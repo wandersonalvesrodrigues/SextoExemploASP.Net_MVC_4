@@ -1,8 +1,9 @@
-﻿using System.Web.Mvc;
+﻿using CadeMeuMedicoMVC.Controllers;
+using System.Web.Mvc;
 
 namespace CadeMeuMedicoMVC.Areas.Adm.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
         public ActionResult Index()
         {

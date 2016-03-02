@@ -28,10 +28,10 @@ namespace CadeMeuMedicoMVC.Filtros
             }
             else 
             {
-               // if (UsuarioBL.VerificaSeOUsuarioEstaLogado() != null)
-               // {
-                 //   FiltroDeContexto.RequestContext.HttpContext.Response.Redirect("/Home/Login");
-               // }
+                if (UsuarioBL.VerificaSeOUsuarioEstaLogado() != null)
+                {
+                    FiltroDeContexto.RequestContext.HttpContext.Response.Redirect("/adm/medico/index");
+                }
             }
         }
     }
